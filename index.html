@@ -18,7 +18,7 @@
 				text-align: center;
 			}
 			header h1 {
-				font-family: arial;
+				font-family: verdana;
 				font-size: 80px;
 				font-weight: bold;
 				color: white;
@@ -26,11 +26,24 @@
 				text-stroke: 2px black; /* for other browsers */
 				padding-top: 0px;
 				padding-bottom: 0px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			header h2 {
+				font-family: verdana;
+				font-size: 40px;
+				font-weight: bold;
+				color: white;
+				-webkit-text-stroke: 1.5px black; /* for webkit browsers like Chrome, Safari */
+				text-stroke: 1.5px black; /* for other browsers */
+				padding-top: 0px;
+				padding-bottom: 10px;
+				margin: 0px;
 			}
 			nav ul {
 				list-style-type: none;
-				margin-top: 0px;
-				margin-bottom: 50px;
+				margin-top: 15px;
+				margin-bottom: 30px;
 				padding: 0px;
 			}
 			nav li {
@@ -38,12 +51,11 @@
 				margin-right: 30px;
 			}
 			nav a {
+				font-family: verdana;
 				font-size: 20px;
-				font-family: arial;
-				font-weight: bold;
 				display: block;
 				padding: 7.5px;
-				background-color: rgba(255, 255, 255, 0.8);
+				background-color: rgba(255, 255, 255, 1);
 				color: black;
 				text-decoration: none;
 				border-radius: 15px;
@@ -56,7 +68,7 @@
 			}
 			footer {
 				marging: 0px;
-				padding: 20px;
+				padding: 5px;
 				text-align: center;
 				background-color: black;
 				color: white;
@@ -66,31 +78,26 @@
 	<body>
 		<header>
 			<h1> Thomas J. A. Bernard </h1>
+			<h2> Geomorphologist </h2>
 			<nav>
 				<ul>
-					<li> <a href="#about"> About Me </a> </li>
-					<li> <a href="#publication"> Publication </a> </li>
-					<li> <a href="#contact"> Contact </a> </li>
-					
 					<li> <a href="./research.html"> Research </a> </li>
+					<li> <a href="./publication.html"> Publication </a> </li>
+					<li> <a href="./cv.html"> CV </a> </li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<section id="about">
+			<section>
 				<h2> About Me: </h2>
 				<p> Text in progress </p>
 			</section>
-			<section id="Publication">
-				<h2> My Publication: </h2>
-				<p> Text in progress </p>
-			</section>
-			<section id="contact">
+			<section>
 				<h2> Contact Me: </h2>
 				<p> email: bernard.thomas0192@gmail.com <br> twitter: @ThomasB59390799 </p>
 			</section>
 		</main>
 		<footer>
-			<p> &copy; 2023 My Personal Page </p>
+			<p> &copy; 2023 Thomas J. A. Bernard Personal Page </p>
 	</body>
 </html>
