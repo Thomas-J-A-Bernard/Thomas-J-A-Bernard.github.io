@@ -16,7 +16,35 @@
 				color: white;
 				padding: 0px;
 				text-align: center;
+				position: relative; /* add this property for positioning the pseudo-elements */
 			}
+			
+			/* add the black line at the top border */
+			header::before {
+				  content: "";
+				  display: block;
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  right: 0;
+				  height: 2px;
+				  background-color: black;
+				  opacity: 1.0;
+			}
+			
+			/* add the black line at the bottom border */
+			header::after {
+				  content: "";
+				  display: block;
+				  position: absolute;
+				  bottom: 0;
+				  left: 0;
+				  right: 0;
+				  height: 2px;
+				  background-color: black;
+				  opacity: 1.0;
+			}
+			
 			header h1 {
 				font-family: verdana;
 				font-size: 80px;
@@ -29,6 +57,7 @@
 				margin-top: 0px;
 				margin-bottom: 20px;
 			}
+			
 			header h2 {
 				font-family: verdana;
 				font-size: 40px;
@@ -41,6 +70,7 @@
 				margin-top: 0px;
 				margin-bottom: 0px;
 			}
+			
 			nav ul {
 				list-style-type: none;
 				margin-top: 15px;
@@ -48,10 +78,12 @@
 				padding: 0px;
 				text-align: center;
 			}
+			
 			nav li {
 				display: inline-block;
 				margin-right: 30px;
 			}
+			
 			nav a {
 				font-family: verdana;
 				font-size: 15px;
@@ -66,6 +98,7 @@
 				text-align: center;
 				position: relative; /* Add position relative to the links */
 			}
+			
 			nav a:after {
 				content: '';
 				position: absolute;
@@ -73,20 +106,23 @@
 				height: 2px;
 				bottom: -5px;
 				left: 0;
-				background-color: #3D3D3D;
+				background-color: black;
 				visibility: hidden;
 				transform: scaleX(0);
 				transition: all 0.3s ease-in-out 0s; /* Add transition */
 			}
+			
 			nav a:hover:after {
 				visibility: visible;
 				transform: scaleX(1);
 			}
+			
 			main {
 				margin-top: 20px;
 				margin-bottom: 20px;
 				margin: 20px;
 			}
+			
 			footer {
 				marging: 0px;
 				padding: 5px;
@@ -94,6 +130,7 @@
 				background-color: black;
 				color: white;
 			}
+			
 		</style>
 	</head>
 	<body>
