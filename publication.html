@@ -2,20 +2,120 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="research page of my personal webpage">
-		<title> Thomas J. A. Bernard </title>
+		<meta name="description" content="publication record page of my personal webpage">
+		<title> Publication record </title>
+		<style>
+			body {
+				margin: 0px;
+			}
+			
+			nav ul {
+				list-style-type: none;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				padding: 0px;
+				text-align: center;
+			}
+			
+			nav li {
+				display: inline-block;
+				margin-right: 30px;
+			}
+			
+			nav a {
+				font-family: verdana;
+				font-size: 15px;
+				font-weight: bold;
+				display: block;
+				padding: 7.5px;
+				background-color: rgba(255, 255, 255, 1);
+				color: black;
+				text-decoration: none;
+				border: none;
+				border-radius: 15px;
+				text-align: center;
+				position: relative; /* Add position relative to the links */
+			}
+			
+			nav a:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				bottom: -5px;
+				left: 0;
+				background-color: black;
+				visibility: hidden;
+				transform: scaleX(0);
+				transition: all 0.3s ease-in-out 0s; /* Add transition */
+			}
+			
+			nav a:hover:after {
+				visibility: visible;
+				transform: scaleX(1);
+			}
+			
+			main {
+				display: flex; /* Use flexbox for vertical centering */
+				justify-content: center; /* Center items horizontally */
+				align-items: center; /* Center items vertically */
+				flex-direction: column; /* Stack items vertically */
+				margin-top: 15px;
+				margin-bottom: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+				text-align: center;
+			}
+			
+			.publication-section {
+				display: flex; /* Use flexbox for side-by-side layout */
+				flex-direction: column; /* Stack items vertically */
+				align-items: center;
+				margin-bottom: 15px;
+			}
+			
+			.publication-section img {
+				width: 1500px;
+				height: auto;
+				border: 2px solid black;
+				border-radius: 7.5px;
+			}
+			
+			.publication-section .publication-text {
+				margin-top: 0px;
+				margin-left: 0px;	
+			}
+			
+			footer {
+				marging: 0px;
+				padding: 5px;
+				text-align: center;
+				background-color: black;
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1> Research </h1>
-			<nav>
+		<nav>
 				<ul>
-					<li> <a href="./index.html"> Home </a> </li>
+					<li> <a href="./index.html"> HOME </a> </li>
+					<li> <a href="./research.html"> RESEARCH </a> </li>
+					<li> <a href="./publication.html"> PUBLICATION </a> </li>
+					<li> <a href="./cv.html"> CV </a> </li>
 				</ul>
 			</nav>
-		</header>
 		<main>
-			<p> Text in progress </p>
+			<section>
+				<div class="publication-section">
+					<img src="https://www.dropbox.com/s/st1hk251vdmnwhx/IMG_20221106_093855_stitch.jpg?raw=1" alt="profile image">
+					<div class="publication-text">
+						<h2> Publication Record: </h2>
+						<p> 
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<p> &copy; 2023 My Personal Page </p>

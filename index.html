@@ -8,6 +8,7 @@
 			body {
 				margin: 0px;
 			}
+			
 			header {
 				margin: 0px;
 				background-image: url("https://www.dropbox.com/s/617312pweqnaup4/IMG_20221117_150707_stitch.jpg?raw=1");
@@ -52,7 +53,7 @@
 				color: white;
 				-webkit-text-stroke: 2px black; /* for webkit browsers like Chrome, Safari */
 				text-stroke: 2px black; /* for other browsers */
-				padding-top: 50px;
+				padding-top: 30px;
 				padding-bottom: 0px;
 				margin-top: 0px;
 				margin-bottom: 20px;
@@ -66,7 +67,7 @@
 				-webkit-text-stroke: 1.5px black; /* for webkit browsers like Chrome, Safari */
 				text-stroke: 1.5px black; /* for other browsers */
 				padding-top: 0px;
-				padding-bottom: 75px;
+				padding-bottom: 40px;
 				margin-top: 0px;
 				margin-bottom: 0px;
 			}
@@ -118,25 +119,34 @@
 			}
 			
 			main {
-				margin-top: 20px;
+				display: flex; /* Use flexbox for vertical centering */
+				justify-content: center; /* Center items horizontally */
+				align-items: center; /* Center items vertically */
+				flex-direction: column; /* Stack items vertically */
+				margin-top: 30px;
 				margin-bottom: 20px;
-				margin: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+				text-align: center;
 			}
 			
-			.about-section {
-				display: flex;
+			.presentation-section {
+				display: flex; /* Use flexbox for side-by-side layout */
 				align-items: center;
-				margin-bottom: 20px;
+				margin-bottom: 15px;
+				text-align: left; /* Align the text to the left */
 			}
 			
-			.about-section img {
-				width: 20%;
-				margin-right: 20px;
-				border: 3px solid black;
+			.presentation-section img {
+				width: 250px;
+				height: auto;
+				margin-right: 20px; /* Add margin to create space between the image and text */
+				border: 2px solid black;
 				border-radius: 7.5px;
 			}
 			
-			.about-section .about-text {
+			.presentation-section .presentation-text {
 				margin-top: 0px;
 				margin-left: 0px;	
 			}
@@ -167,13 +177,26 @@
 		</header>
 		<main>
 			<section>
-				<div class="about-section">
+				<div class="presentation-section">
 					<img src="https://www.dropbox.com/s/m96hx7zwhumqj84/profile-image.jpg?raw=1" alt="profile image">
-					<div class="about-text">
-						<h2> About Me: </h2>
-						<p> Text in progress </p>
+					<div class="presentation-text">
+						<h2> Postdoctoral Researcher: </h2>
+						<p> 
+						Bashelor's degree - Earth and Environment Sciences <br>
+						University Joseph Fourier 1 - Grenoble - France (2010-2013) <br>
+						<br>
+						Master's degree - Earth and Environment Sciences <br>
+						University of Rennes 1 - Rennes - France (2013-2015) <br>
+						<br>
+						PhD - Atmospheric and Environmental Sciences <br>
+						The University of Edinburgh - Edinburgh - UK (2016-2020)
+						</p>
 					</div>
 				</div>
+			</section>
+			<section>
+				<h2> About Me: </h2>
+				<p> Text in progress </p>
 			</section>
 			<section>
 				<h2> Contact Me: </h2>
