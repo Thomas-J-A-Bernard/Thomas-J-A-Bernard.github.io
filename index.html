@@ -8,7 +8,7 @@
 			body {
 				margin: 0px;
 			}
-			
+
 			header {
 				margin: 0px;
 				background-image: url("https://www.dropbox.com/s/617312pweqnaup4/IMG_20221117_150707_stitch.jpg?raw=1");
@@ -19,7 +19,7 @@
 				text-align: center;
 				position: relative; /* add this property for positioning the pseudo-elements */
 			}
-			
+
 			/* add the black line at the top border */
 			header::before {
 				  content: "";
@@ -32,7 +32,7 @@
 				  background-color: black;
 				  opacity: 1.0;
 			}
-			
+
 			/* add the black line at the bottom border */
 			header::after {
 				  content: "";
@@ -45,9 +45,9 @@
 				  background-color: black;
 				  opacity: 1.0;
 			}
-			
+
 			header h1 {
-				font-family: verdana;
+				font-family: Tahoma;
 				font-size: 80px;
 				font-weight: bold;
 				color: white;
@@ -58,9 +58,9 @@
 				margin-top: 0px;
 				margin-bottom: 20px;
 			}
-			
+
 			header h2 {
-				font-family: verdana;
+				font-family: Tahoma;
 				font-size: 40px;
 				font-weight: bold;
 				color: white;
@@ -71,7 +71,7 @@
 				margin-top: 0px;
 				margin-bottom: 0px;
 			}
-			
+
 			nav ul {
 				list-style-type: none;
 				margin-top: 15px;
@@ -79,14 +79,14 @@
 				padding: 0px;
 				text-align: center;
 			}
-			
+
 			nav li {
 				display: inline-block;
 				margin-right: 30px;
 			}
-			
+
 			nav a {
-				font-family: verdana;
+				font-family: Tahoma;
 				font-size: 15px;
 				font-weight: bold;
 				display: block;
@@ -99,7 +99,7 @@
 				text-align: center;
 				position: relative; /* Add position relative to the links */
 			}
-			
+
 			nav a:after {
 				content: '';
 				position: absolute;
@@ -112,12 +112,12 @@
 				transform: scaleX(0);
 				transition: all 0.3s ease-in-out 0s; /* Add transition */
 			}
-			
+
 			nav a:hover:after {
 				visibility: visible;
 				transform: scaleX(1);
 			}
-			
+
 			main {
 				display: flex; /* Use flexbox for vertical centering */
 				justify-content: center; /* Center items horizontally */
@@ -130,35 +130,51 @@
 				width: 80%;
 				text-align: center;
 			}
-			
+
+			main h1 {
+				font-family: Tahoma;
+				font-size: 22.5px;
+				font-weight: bold;
+				color: #424242;
+				text-decoration: underline;
+				text-underline-offset: 5px;
+				margin-bottom: 30px;
+			}
+
+			main p {
+				font-family: arial;
+				font-size: 18px;
+				color: #424242;
+			}
+
 			.presentation-section {
 				display: flex; /* Use flexbox for side-by-side layout */
 				align-items: center;
 				margin-bottom: 15px;
-				text-align: left; /* Align the text to the left */
+				text-align: left;
 			}
-			
+
 			.presentation-section img {
 				width: 250px;
 				height: auto;
-				margin-right: 20px; /* Add margin to create space between the image and text */
+				margin-right: 30px; /* Add margin to create space between the image and text */
 				border: 2px solid black;
 				border-radius: 7.5px;
 			}
-			
+
 			.presentation-section .presentation-text {
 				margin-top: 0px;
-				margin-left: 0px;	
+				margin-left: 0px;
 			}
-			
+
 			footer {
-				marging: 0px;
+				margin: 0px;
 				padding: 5px;
 				text-align: center;
 				background-color: black;
 				color: white;
 			}
-			
+
 		</style>
 	</head>
 	<body>
@@ -173,15 +189,15 @@
 		<header>
 			<h1> Thomas J. A. Bernard </h1>
 			<h2> Geomorphologist </h2>
-			
+
 		</header>
 		<main>
 			<section>
 				<div class="presentation-section">
 					<img src="https://www.dropbox.com/s/m96hx7zwhumqj84/profile-image.jpg?raw=1" alt="profile image">
 					<div class="presentation-text">
-						<h2> Postdoctoral Researcher: </h2>
-						<p> 
+						<h1> Postdoctoral Researcher: </h1>
+						<p>
 						Bashelor's degree - Earth and Environment Sciences <br>
 						University Joseph Fourier 1 - Grenoble - France (2010-2013) <br>
 						<br>
@@ -194,16 +210,17 @@
 					</div>
 				</div>
 			</section>
-			<section>
-				<h2> About Me: </h2>
+			<section class="about-section">
+				<h1> About Me: </h1>
 				<p> Text in progress </p>
 			</section>
-			<section>
-				<h2> Contact Me: </h2>
+			<section class="contact-section">
+				<h1> Contact Me: </h1>
 				<p> email: bernard.thomas0192@gmail.com <br> twitter: @ThomasB59390799 </p>
 			</section>
 		</main>
 		<footer>
 			<p> &copy; 2023 Thomas J. A. Bernard Personal Page </p>
+		</footer>
 	</body>
 </html>

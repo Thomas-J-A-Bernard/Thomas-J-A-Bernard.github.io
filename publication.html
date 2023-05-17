@@ -8,7 +8,7 @@
 			body {
 				margin: 0px;
 			}
-			
+
 			nav ul {
 				list-style-type: none;
 				margin-top: 15px;
@@ -16,14 +16,14 @@
 				padding: 0px;
 				text-align: center;
 			}
-			
+
 			nav li {
 				display: inline-block;
 				margin-right: 30px;
 			}
-			
+
 			nav a {
-				font-family: verdana;
+				font-family: Tahoma;
 				font-size: 15px;
 				font-weight: bold;
 				display: block;
@@ -36,7 +36,7 @@
 				text-align: center;
 				position: relative; /* Add position relative to the links */
 			}
-			
+
 			nav a:after {
 				content: '';
 				position: absolute;
@@ -49,12 +49,12 @@
 				transform: scaleX(0);
 				transition: all 0.3s ease-in-out 0s; /* Add transition */
 			}
-			
+
 			nav a:hover:after {
 				visibility: visible;
 				transform: scaleX(1);
 			}
-			
+
 			main {
 				display: flex; /* Use flexbox for vertical centering */
 				justify-content: center; /* Center items horizontally */
@@ -64,31 +64,58 @@
 				margin-bottom: 20px;
 				margin-left: auto;
 				margin-right: auto;
-				width: 80%;
+				width: 100%;
 				text-align: center;
 			}
-			
+
+			main h1 {
+				font-family: Tahoma;
+				font-size: 22.5px;
+				font-weight: bold;
+				color: #424242;
+				text-decoration: underline;
+				text-underline-offset: 5px;
+				margin-bottom: 30px;
+			}
+
+			main p {
+				font-family: arial;
+				font-size: 18px;
+				color: #424242;
+			}
+
+			section {
+				text-align: left;
+			}
+
 			.publication-section {
 				display: flex; /* Use flexbox for side-by-side layout */
 				flex-direction: column; /* Stack items vertically */
 				align-items: center;
 				margin-bottom: 15px;
 			}
-			
+
 			.publication-section img {
-				width: 1500px;
-				height: auto;
-				border: 2px solid black;
-				border-radius: 7.5px;
+				width: 100vw; /* Set the width to 100% of the container */
+			    height: 230px; /* Set a constant height for the image */
+			    object-fit: cover; /* Maintain aspect ratio and cover the container */
+			    border: 2px solid black;
+			    border-radius: 0px;
 			}
-			
+
 			.publication-section .publication-text {
 				margin-top: 0px;
-				margin-left: 0px;	
+				margin-left: 0px;
+				margin-left: 100px;
+				margin-right: 100px;
 			}
-			
+
+			.publication-section .publication-text h1 {
+  				text-align: center;
+			}
+
 			footer {
-				marging: 0px;
+				margin: 0px;
 				padding: 5px;
 				text-align: center;
 				background-color: black;
@@ -110,8 +137,19 @@
 				<div class="publication-section">
 					<img src="https://www.dropbox.com/s/st1hk251vdmnwhx/IMG_20221106_093855_stitch.jpg?raw=1" alt="profile image">
 					<div class="publication-text">
-						<h2> Publication Record: </h2>
-						<p> 
+						<h1> Journal articles: </h1>
+						<p>
+							Fox, M., Hoseason, T., <b>Bernard, T.</b>, Sinclair, H., & Smith, A. G. G. (2023). Bedload‐Bedrock Contrasts Form Enigmatic Low‐Relief Surfaces of the Pyrenees. <i>Geophysical Research Letters</i>, 50(6), <a href="https://doi.org/10.1029/2022GL101995">https://doi.org/10.1029/2022GL101995</a>.<br>
+							<br>
+							<b>Bernard, T.</b>, & Sinclair, H. D. (2022). Accelerated sediment delivery to continental margins during post‐orogenic rebound of mountain ranges. <i>Basin Research</i>, 35(2), 642-661. <a href="https://doi.org/10.1111/bre.12727">https://doi.org/10.1111/bre.12727</a>.<br>
+							<br>
+							<b>Bernard, T.</b>, Sinclair, H. D., Gailleton B., & Fox, M. (2021). Formation of longitudinal river valleys and the fixing of drainage divides in response to exhumation of crystalline basement. <i>Geophysical Research Letters</i>, 48(8). <a href="https://doi.org/10.1029/2020GL092210">https://doi.org/10.1029/2020GL092210</a>.<br>
+							<br>
+							<b>Bernard, T.</b>, Sinclair, H. D., Naylor, M., Christophoul, F., & Ford, M. (2020). Post‐orogenic sediment drape in the Northern Pyrenees explained using a box model. <i>Basin Research</i>, 33(1), 118-137. <a href="https://doi.org/10.1111/bre.12457">https://doi.org/10.1111/bre.12457</a>.<br>
+							<br>
+							<b>Bernard, T.</b>, Sinclair, H. D., Gailleton, B., Mudd, S. M., & Ford, M. (2019). Lithological control on the post-orogenic topography and erosion history of the Pyrenees. <i>Earth and Planetary Science Letters</i>, 518, 53-66. <a href="https://doi.org/10.1016/j.epsl.2019.04.034">https://doi.org/10.1016/j.epsl.2019.04.034</a>.<br>
+							<br>
+							<b>Bernard, T.</b>, Steer, P., Gallagher, K., Szulc, A., Whitham, A., & Johnson, C. (2016). Evidence for Eocene–Oligocene glaciation in the landscape of the East Greenland margin. <i>Geology</i>, 44(11), 895-898. <a href="https://doi.org/10.1130/G38248.1">https://doi.org/10.1130/G38248.1</a>.<br>
 						</p>
 					</div>
 				</div>
@@ -119,5 +157,6 @@
 		</main>
 		<footer>
 			<p> &copy; 2023 My Personal Page </p>
+		</footer>
 	</body>
 </html>
